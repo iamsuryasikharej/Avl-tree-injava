@@ -95,38 +95,5 @@ public class Avltree {
 	}
 	
 	
-	public void disp()
-	{
-		disp(this.root);
-	}
-	private void disp(AvlNode node) {
-		if(node==null)
-		{
-			return ;
-		}
-		
-
-		String str="";
-		if(node.left==null)
-		{
-			str+=".";
-		}
-		else
-		{
-			str+=node.left.data;
-		}
-		str+="=>"+node.data+"<=";
-		if(node.right==null)
-		{
-			str+=".";
-		}
-		else
-		{
-			str+=node.right.data;
-		}
-		System.out.println(str);
-		disp(node.left);
-		disp(node.right);
-		
-	}
+	
 }
